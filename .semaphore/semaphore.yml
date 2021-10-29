@@ -27,4 +27,4 @@ blocks:
         - name: Deploy nginx
           commands:
             - kubectl get nodes
-            - kubectl run nginx --image nginx
+            - kubectl create -f nginx-deployment.yaml
